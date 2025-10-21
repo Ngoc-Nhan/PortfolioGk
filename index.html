@@ -9,7 +9,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Icons (you can replace with local svgs if you prefer) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +17,7 @@
 <body class="theme-light">
     <!-- NAVBAR -->
     <header class="nav-wrap" id="top">
-        <nav class="navbar">
+        <nav class="navbar" data-animate>
             <a class="logo" href="#home">My Portfolio</a>
 
             <div class="nav-links desktop-only">
@@ -46,24 +46,23 @@
     <!-- MAIN CONTENT -->
     <main>
         <!-- HERO / BANNER -->
-        <section id="home" class="hero">
-            <div class="hero-inner">
+        <section id="home" class="hero" data-animate>
+            <div class="hero-inner" data-animate>
                 <div class="hero-text">
                     <p class="lead">Hello everyone, I am</p>
                     <h1 class="name">Vo Thi Ngoc Nhan</h1>
                     <p class="subtitle">3rd year student — Ho Chi Minh City University of Transport</p>
                 </div>
                 <div class="hero-avatar">
-                    <!-- Place your main avatar in assets/anh.png -->
                     <img src="./anh.png" alt="Avatar" class="avatar" />
                 </div>
             </div>
         </section>
 
         <!-- ABOUT -->
-        <section id="about" class="section">
+        <section id="about" class="section" data-animate>
             <div class="container">
-                <div class="card">
+                <div class="card" data-animate>
                     <h2>Personal Information</h2>
                     <ul class="info-list">
                         <li>👤 Full Name: <strong>Vo Thi Ngoc Nhan</strong></li>
@@ -73,7 +72,7 @@
                     </ul>
                 </div>
 
-                <div class="card">
+                <div class="card" data-animate>
                     <h2>Career Objective</h2>
                     <p class="muted">
                         To become a professional <strong>Front-End Developer</strong>, capable of designing and building
@@ -84,7 +83,7 @@
                     </p>
                 </div>
 
-                <div class="card card-hobby">
+                <div class="card card-hobby" data-animate>
                     <h2>My Hobby</h2>
                     <p class="muted">
                         I enjoy exploring new cuisines, listening to music, and traveling to discover different cultures
@@ -94,23 +93,22 @@
                     </p>
 
                     <div class="hobby-grid">
-                        <!-- Put these images in assets/ as eat.jpg, music.jpg, dulich.jpg (or change paths) -->
-                        <div class="hobby-item">
+                        <div class="hobby-item" data-animate>
                             <img src="./eat.jpg" alt="Eating" />
                             <p>Trying new foods</p>
                         </div>
-                        <div class="hobby-item">
+                        <div class="hobby-item" data-animate>
                             <img src="./music.jpg" alt="Music" />
                             <p>Listening to music</p>
                         </div>
-                        <div class="hobby-item">
+                        <div class="hobby-item" data-animate>
                             <img src="./dulich.jpg" alt="Travel" />
                             <p>Traveling & exploring</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-animate>
                     <h2>Skills & Languages</h2>
                     <div class="skills-grid">
                         <ul class="skill-list">
@@ -120,11 +118,10 @@
                             <li>React (Normal)</li>
                             <li>Tailwind CSS ( Normal)</li>
                         </ul>
-
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-animate>
                     <h2>Certificates & Awards</h2>
                     <p class="muted"><em>None at the moment.</em><em> <strong>But I am confident that I will achieve it
                                 in
@@ -134,13 +131,12 @@
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="section section-projects">
+        <section id="projects" class="section section-projects" data-animate>
             <div class="container">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title" data-animate>Projects</h2>
 
                 <div class="projects-grid">
-                    <!-- Project 1: Group Project tag -->
-                    <div class="project-card">
+                    <div class="project-card" data-animate>
                         <div class="project-thumb">
                             <img src="./projectGr.png" alt="Remarket Website" />
                             <span class="badge">Group Project</span>
@@ -150,8 +146,7 @@
                             development & UI design.</p>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
+                    <div class="project-card" data-animate>
                         <div class="project-thumb">
                             <img src="./profile.png" alt="Portfolio Website" />
                         </div>
@@ -163,18 +158,18 @@
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="section">
+        <section id="contact" class="section" data-animate>
             <div class="container">
-                <div class="card contact-card">
+                <div class="card contact-card" data-animate>
                     <h2>Contact</h2>
                     <p class="muted">Feel free to reach out via any of the links below:</p>
                     <div class="contact-grid">
-                        <a href="https://github.com/ngoc-nhan" target="_blank" rel="noreferrer"
-                            class="contact-item">GitHub</a>
-                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer"
-                            class="contact-item">Facebook</a>
-                        <a href="mailto:ngocnhan282005@gmail.com" class="contact-item">Email</a>
-                        <a href="#" class="contact-item">Instagram</a>
+                        <a href="https://github.com/ngoc-nhan" target="_blank" rel="noreferrer" class="contact-item"
+                            data-animate>GitHub</a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="contact-item"
+                            data-animate>Facebook</a>
+                        <a href="mailto:ngocnhan282005@gmail.com" class="contact-item" data-animate>Email</a>
+                        <a href="#" class="contact-item" data-animate>Instagram</a>
                     </div>
                 </div>
             </div>
@@ -182,19 +177,15 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" data-animate>
         <p>© <span id="year"></span> Vo Thi Ngoc Nhan — All rights reserved.</p>
     </footer>
 
-    <!-- SCRIPT: dark/light, smooth scroll fix for anchor offset, mobile menu -->
+    <!-- SCRIPT: dark/light, smooth scroll fix, mobile menu, fade-in scroll -->
     <script>
-        // ---- Config ----
-        const NAV_HEIGHT = 96; // px (adjust if you change CSS)
-        // ---- Helper: apply initial year ----
+        const NAV_HEIGHT = 96;
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // ---- Theme toggle (persist in localStorage) ----
-        const root = document.documentElement;
         const body = document.body;
         const themeToggle = document.getElementById('theme-toggle');
         const themeToggleMobile = document.getElementById('theme-toggle-mobile');
@@ -213,22 +204,17 @@
             }
         }
 
-        // Initial theme (default dark)
         let saved = localStorage.getItem('site-theme') || 'dark';
         applyTheme(saved);
-
         function toggleTheme() {
             saved = (saved === 'dark') ? 'light' : 'dark';
             localStorage.setItem('site-theme', saved);
             applyTheme(saved);
         }
-
         themeToggle && themeToggle.addEventListener('click', toggleTheme);
         themeToggleMobile && themeToggleMobile.addEventListener('click', toggleTheme);
 
-        // ---- Smooth scroll offset fix for anchor links ----
-        // Use CSS scroll-behavior for smoothness, but browser jumps to anchor before offset.
-        // We intercept clicks to perform a JS scroll with offset.
+        // Smooth scroll anchor
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href').slice(1);
@@ -236,40 +222,39 @@
                 const targetEl = document.getElementById(targetId);
                 if (!targetEl) return;
                 e.preventDefault();
-
-                // Close mobile menu if open
                 if (document.getElementById('mobile-menu') && !document.getElementById('mobile-menu').classList.contains('hidden')) {
                     document.getElementById('mobile-menu').classList.add('hidden');
                 }
-
                 const targetTop = targetEl.getBoundingClientRect().top + window.pageYOffset;
-                const scrollTo = targetTop - NAV_HEIGHT + 8; // slight extra spacing
-                window.scrollTo({
-                    top: scrollTo,
-                    behavior: 'smooth'
-                });
+                const scrollTo = targetTop - NAV_HEIGHT + 8;
+                window.scrollTo({ top: scrollTo, behavior: 'smooth' });
             });
         });
 
-        // ---- Mobile menu toggle ----
+        // Mobile menu
         const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileBtn && mobileMenu) {
-            mobileBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-            // hide menu when clicking outside
+            mobileBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
             document.addEventListener('click', (e) => {
                 if (!mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
                     mobileMenu.classList.add('hidden');
                 }
             });
         }
-
-        // Accessibility: close mobile menu on small-screen nav link click
         document.querySelectorAll('.mobile-item').forEach(el => {
             el.addEventListener('click', () => mobileMenu.classList.add('hidden'));
         });
+
+        // --- Fade-in scroll animation ---
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
     </script>
 </body>
 
