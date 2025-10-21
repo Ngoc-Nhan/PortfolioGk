@@ -505,3 +505,42 @@ body {
 .project-card[data-animate]:nth-child(5) {
     transition-delay: 0.5s;
 }
+
+/* --- Hero gallery 4 personal images as square 2x2 --- */
+.hero-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cột */
+    grid-template-rows: repeat(2, 1fr);
+    /* 2 hàng */
+    gap: 12px;
+    width: 260px;
+    /* Chiều rộng tổng của div */
+    height: 260px;
+    /* Chiều cao bằng chiều rộng → vuông */
+    margin-top: 20px;
+}
+
+.hero-gallery .gallery-item img {
+    width: 100%;
+    /* full size trong ô grid */
+    height: 100%;
+    /* full size trong ô grid */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.hero-gallery .gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive nhỏ hơn */
+@media (max-width:600px) {
+    .hero-gallery {
+        width: 200px;
+        height: 200px;
+        gap: 8px;
+    }
+}
