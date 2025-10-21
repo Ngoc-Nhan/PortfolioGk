@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vo Thi Ngoc Nhan — Portfolio</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Icons (you can replace with local svgs if you prefer) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="theme-light">
+    <!-- NAVBAR -->
+    <header class="nav-wrap" id="top">
+        <nav class="navbar">
+            <a class="logo" href="#home">My Portfolio</a>
+
+            <div class="nav-links desktop-only">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
+            </div>
+
+            <div class="mobile-only">
+                <button id="mobile-menu-btn" class="btn-icon" aria-label="Open menu">☰</button>
+            </div>
+        </nav>
+
+        <!-- Mobile dropdown -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="#home" class="nav-link mobile-item">Home</a>
+            <a href="#about" class="nav-link mobile-item">About</a>
+            <a href="#projects" class="nav-link mobile-item">Projects</a>
+            <a href="#contact" class="nav-link mobile-item">Contact</a>
+            <button id="theme-toggle-mobile" class="btn-icon mobile-item">🌙</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO / BANNER -->
+        <section id="home" class="hero">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <p class="lead">Hello everyone, I am</p>
+                    <h1 class="name">Vo Thi Ngoc Nhan</h1>
+                    <p class="subtitle">3rd year student — Ho Chi Minh City University of Transport</p>
+                </div>
+                <div class="hero-avatar">
+                    <!-- Place your main avatar in assets/anh.png -->
+                    <img src="/gk/anh.png" alt="Avatar" class="avatar" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="card">
+                    <h2>Personal Information</h2>
+                    <ul class="info-list">
+                        <li>👤 Full Name: <strong>Vo Thi Ngoc Nhan</strong></li>
+                        <li>📅 Date of Birth: <strong>02/08/2005</strong></li>
+                        <li>📍 Address: <strong>Thu Duc City</strong></li>
+                        <li>✉️ Email: <strong>ngocnhan282005@gmail.com</strong></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>Career Objective</h2>
+                    <p class="muted">
+                        To become a professional <strong>Front-End Developer</strong>, capable of designing and building
+                        modern, creative, and user-friendly interfaces.
+                        I aim to continuously improve my skills in web technologies, contribute to creating high-quality
+                        and visually appealing websites, and collaborate effectively within a dynamic team to deliver
+                        innovative digital experiences.
+                    </p>
+                </div>
+
+                <div class="card card-hobby">
+                    <h2>My Hobby</h2>
+                    <p class="muted">
+                        I enjoy exploring new cuisines, listening to music, and traveling to discover different cultures
+                        and beautiful places.
+                        Besides that, my curiosity always drives me to explore new things and learn from every
+                        experience around me.
+                    </p>
+
+                    <div class="hobby-grid">
+                        <!-- Put these images in assets/ as eat.jpg, music.jpg, dulich.jpg (or change paths) -->
+                        <div class="hobby-item">
+                            <img src="./eat.jpg" alt="Eating" />
+                            <p>Trying new foods</p>
+                        </div>
+                        <div class="hobby-item">
+                            <img src="./music.jpg" alt="Music" />
+                            <p>Listening to music</p>
+                        </div>
+                        <div class="hobby-item">
+                            <img src="./dulich.jpg" alt="Travel" />
+                            <p>Traveling & exploring</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Skills & Languages</h2>
+                    <div class="skills-grid">
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS & CSS3 </li>
+                            <li>JavaScript</li>
+                            <li>React (Normal)</li>
+                            <li>Tailwind CSS ( Normal)</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Certificates & Awards</h2>
+                    <p class="muted"><em>None at the moment.</em><em> <strong>But I am confident that I will achieve it
+                                in
+                                the near future.</strong></em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section section-projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Group Project tag -->
+                    <div class="project-card">
+                        <div class="project-thumb">
+                            <img src="./projectGr.png" alt="Remarket Website" />
+                            <span class="badge">Group Project</span>
+                        </div>
+                        <h3>Remarket Website</h3>
+                        <p class="muted">A platform for buying & selling second-hand products. My role: Front-End
+                            development & UI design.</p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-thumb">
+                            <img src="./profile.png" alt="Portfolio Website" />
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p class="muted ">Personal portfolio showcasing projects, skills and contact information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="card contact-card">
+                    <h2>Contact</h2>
+                    <p class="muted">Feel free to reach out via any of the links below:</p>
+                    <div class="contact-grid">
+                        <a href="https://github.com/ngoc-nhan" target="_blank" rel="noreferrer"
+                            class="contact-item">GitHub</a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer"
+                            class="contact-item">Facebook</a>
+                        <a href="mailto:ngocnhan282005@gmail.com" class="contact-item">Email</a>
+                        <a href="#" class="contact-item">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Vo Thi Ngoc Nhan — All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPT: dark/light, smooth scroll fix for anchor offset, mobile menu -->
+    <script>
+        // ---- Config ----
+        const NAV_HEIGHT = 96; // px (adjust if you change CSS)
+        // ---- Helper: apply initial year ----
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ---- Theme toggle (persist in localStorage) ----
+        const root = document.documentElement;
+        const body = document.body;
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+
+        function applyTheme(t) {
+            if (t === 'dark') {
+                body.classList.remove('theme-light');
+                body.classList.add('theme-dark');
+                themeToggle && (themeToggle.textContent = '🌞');
+                themeToggleMobile && (themeToggleMobile.textContent = '🌞');
+            } else {
+                body.classList.remove('theme-dark');
+                body.classList.add('theme-light');
+                themeToggle && (themeToggle.textContent = '🌙');
+                themeToggleMobile && (themeToggleMobile.textContent = '🌙');
+            }
+        }
+
+        // Initial theme (default dark)
+        let saved = localStorage.getItem('site-theme') || 'dark';
+        applyTheme(saved);
+
+        function toggleTheme() {
+            saved = (saved === 'dark') ? 'light' : 'dark';
+            localStorage.setItem('site-theme', saved);
+            applyTheme(saved);
+        }
+
+        themeToggle && themeToggle.addEventListener('click', toggleTheme);
+        themeToggleMobile && themeToggleMobile.addEventListener('click', toggleTheme);
+
+        // ---- Smooth scroll offset fix for anchor links ----
+        // Use CSS scroll-behavior for smoothness, but browser jumps to anchor before offset.
+        // We intercept clicks to perform a JS scroll with offset.
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href').slice(1);
+                if (!targetId) return;
+                const targetEl = document.getElementById(targetId);
+                if (!targetEl) return;
+                e.preventDefault();
+
+                // Close mobile menu if open
+                if (document.getElementById('mobile-menu') && !document.getElementById('mobile-menu').classList.contains('hidden')) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+
+                const targetTop = targetEl.getBoundingClientRect().top + window.pageYOffset;
+                const scrollTo = targetTop - NAV_HEIGHT + 8; // slight extra spacing
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // ---- Mobile menu toggle ----
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // hide menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        }
+
+        // Accessibility: close mobile menu on small-screen nav link click
+        document.querySelectorAll('.mobile-item').forEach(el => {
+            el.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+    </script>
+</body>
+
+</html>
