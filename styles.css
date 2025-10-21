@@ -407,6 +407,19 @@ body {
         display: block;
     }
 
+    /* nút hamburger menu */
+    .mobile-only .btn-icon {
+        color: var(--text);
+        /* màu theo theme */
+        transition: color .25s ease;
+    }
+
+    /* hover */
+    .mobile-only .btn-icon:hover {
+        color: var(--primary);
+    }
+
+
     .desktop-only {
         display: none;
     }
